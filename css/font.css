@@ -1,28 +1,28 @@
-/*font-family: Abel*/
+/*font-family: Cabin*/
 @font-face{
-    font-family: Abel;
-    src: url('../fonts/Abel/Abel-Regular.ttf');
+    font-family: Cabin;
+    src: url('../fonts/Cabin-Bold.ttf');
 }
 
-/*font-family: Anton*/
+/*font-family: Herr Von Muellerhoff*/
 @font-face{
-    font-family: Anton;
-    src: url('../fonts/Anton/Anton-Regular.ttf');
+    font-family: Herr Von Muellerhoff;
+    src: url('../fonts/HerrVonMuellerhoff-Regular.ttf');
 }
 
-/*font-family: Josefin*/
+/*font-family: Source Sans Pro*/
 @font-face{
-    font-family: Josefin;
-    src: url('../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+    font-family: Source Sans Pro;
+    src: url('../fonts/SourceSansPro-Black.ttf');
 }
 
-/*font-family: Lexend*/
+/* font-family: Lexend
 @font-face{
     font-family: Lexend;
     src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
 }
 
-/*font-family: Livvic*/
+/*font-family: Livvic
 @font-face{
     font-family: Livvic;
-    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+    src: url('../fonts/Livvic/Livvic-Regular.ttf'); */
