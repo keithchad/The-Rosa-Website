@@ -150,6 +150,115 @@ header{
 
 /*---------------------------Section---------------------------*/
 
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../Assets/hero.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
+.sub-headline {
+    font-size: 8.5rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+    font-weight: 100;
+    line-height: .4;
+    letter-spacing: 2px;
+}
 
+.first-letter {
+    text-transform: uppercase;
+    font-size: 10.3rem;
+}
+
+.headline {
+    color: #fff;
+    font-size: 3.7rem;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-right: -.5rem;
+}
+
+.separator {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.line {
+    min-width: 8.4rem;
+    height: .25rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.line-right::before,
+.line-left::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: .6rem solid transparent;
+}
+
+.line-right::before {
+    border-right-color: #fff;
+    right: 0;
+}
+
+.line-left::before {
+    border-left-color: #fff;
+    left: 0;
+}
+
+.asterisk {
+    font-size: 1.2rem;
+    color: var(--secondary-font-color);
+    margin: 0 1.6rem;
+}
+
+.headline-description h5{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.cta-btn {
+    font-size: 1.1rem;
+    background-color: #fff;
+    padding: .9rem 1.8rem;
+    color: var(--body-font-color);
+    border-radius: .5rem;
+    transition: background-color .5s;
+}
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color: var(--secondary-font-color);
+}
 /*--------------x------------Section-------------x-------------*/
+
+
+/*---------------------------Our Story---------------------------*/
+
+
+
+
+/*--------------x------------Our Story-------------x-------------*/
+
+
