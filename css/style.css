@@ -24,6 +24,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     padding: 3.9rem 0;
 }
@@ -167,6 +171,9 @@ header{
     font-weight: 100;
     line-height: .4;
     letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
 }
 
 .first-letter {
@@ -181,6 +188,7 @@ header{
     text-transform: uppercase;
     letter-spacing: .5rem;
     margin-right: -.5rem;
+    animation: scale .5s forwards;
 }
 
 .separator {
@@ -189,11 +197,20 @@ header{
    justify-content: center;
 }
 
+.single-animation {
+    opacity: 0;
+    animation: fadeDown .5s forwards;
+    animation-delay: 1.5s;
+}
+
 .line {
     min-width: 8.4rem;
     height: .25rem;
     background-color: #fff;
     position: relative;
+    animation: grow 2s forwards;
+    animation-delay: .9s;
+    opacity: 0;
 }
 
 .line-right::before,
@@ -203,7 +220,11 @@ header{
     top: 50%;
     transform: translateY(-50%);
     border: .6rem solid transparent;
+    animation: grow .5s forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
 }
+
 
 .line-right::before {
     border-right-color: #fff;
@@ -219,6 +240,9 @@ header{
     font-size: 1.2rem;
     color: var(--secondary-font-color);
     margin: 0 1.6rem;
+    animation: spin .5s forwards;
+    animation-delay: .7s;
+    opacity: 0;
 }
 
 .headline-description h5{
@@ -393,10 +417,11 @@ footer {
     color: #fff;
     font-size: 2rem;
     padding: 2rem;
+    animation: up 2s infinite;
 }
 
 .footer-content {
-    
+    overflow: hidden;
 }
 
 .footer-content h4 {
@@ -474,6 +499,7 @@ footer {
 @media screen and (min-width: 900px) {
     section {
         padding: 7.9rem;
+        overflow: hidden;
     }
 
     .menu-toggle {
@@ -578,11 +604,87 @@ footer {
     .social-icons i{
         opacity: 1;
     }
-
-    
 }
 
 /*--------------x--------------Media Query-----------------x----------*/
+
+
+/*-----------------------------Animations----------------------------*/
+
+@keyframes fadeUp {
+    0%{
+        transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    0%{
+       width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes fade {
+    0%{
+       width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes fadeDown {
+    0%{
+        transform: translateY(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes up {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
+
+/*------------------x-----------Animations------------------x----------*/
 
 
 
